@@ -1,6 +1,6 @@
 
 // Operaciones
-4 + "7";
+console.log(4 + "7")
 4 * "7";
 2 + true;
 false - 3;
