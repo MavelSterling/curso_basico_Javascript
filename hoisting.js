@@ -6,7 +6,7 @@
 // Hoistin: Declara y asigna undefined
 var nombre = undefined
 console.log(nombre) // undefined
-nombre = "Andres"
+nombre = "Andres";
 
 // Hoisting en funciones
 
@@ -22,3 +22,72 @@ function saludar() {
   }
   
   console.log( saludar() ) // "Hola"
+
+  //================================================
+
+  // ERROR -  no arroja miNombre, no esta definida
+  //console.log(miNombre);
+  //var miNombre = "Diego";
+
+  //CORRECTO - porque esta definida
+  var miNombre = "Diego";
+  console.log(miNombre);
+
+  // Lo que sucede con el hoisting
+
+var miNombre = undefined;
+
+console.log(miNombre + "soy hoisting");
+
+miNombre = "Diego";
+
+
+// ===  Hoisting con funcionts  ===
+
+hey();
+
+function hey() {
+    console.log('Hola ' + miNombre);
+};
+
+var miNombre = 'Diego';
+
+// Lo que sucede con hoisting 
+
+function hey() {  //La función se declara hasta arriba, y después se declaran las variables.
+    console.log('Hola ' + miNombre);
+};
+
+var miNombre;
+
+hey();
+
+//---------------------------------
+// Ejemplo
+
+saludo();
+
+function saludo() {
+    console.log("Hola " + nombre);
+}
+
+var nombre = "Aaron";
+
+saludo();
+
+//------------
+function saludo() {
+    console.log("Hola " + nombre);
+}
+
+var nombre = "Aaron";
+
+//-----------------------
+var nombre = "Aaron";
+
+function saludo() {
+    console.log("Hola " + nombre);
+}
+
+saludo();
+
