@@ -71,7 +71,7 @@ function saludo() {
     console.log("Hola " + nombre);
 }
 
-var nombre = "Aaron";
+var nombre = "Smith";
 
 saludo();
 
@@ -80,14 +80,15 @@ function saludo() {
     console.log("Hola " + nombre);
 }
 
-var nombre = "Aaron";
+var nombre = "Smith";
 
 //-----------------------
-var nombre = "Aaron";
+var nombre = "Smith";
 
 function saludo() {
     console.log("Hola " + nombre);
 }
 
 saludo();
+
 
