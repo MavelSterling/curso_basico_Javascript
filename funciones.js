@@ -75,3 +75,14 @@ function map(f, a) {
   let numbers = [0, 1, 2, 5, 10];
   let cube = map(f,numbers);
   console.log(cube);
+
+  //------------------------------
+  // Quiz
+
+  export function solution(valor) {
+    return typeof valor;
+  }
+
+solution(1)
+solution("Dieguillo")
+solution(true)
