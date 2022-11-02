@@ -120,3 +120,4 @@ console.log(index) // -1
 
 var posicion = frutas.indexOf("Platano"); // te dará la posición de ese item en el array
 console.log(frutas);
+
