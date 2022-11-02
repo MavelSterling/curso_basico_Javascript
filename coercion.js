@@ -1,4 +1,4 @@
-
+// Coerción significa que es la forma en que podemos cambiar un tipo de valor a otro
 
 // La coerción implícita consiste en la transformación de tipos mediante la ayuda de JavaScript. 
 
@@ -33,7 +33,7 @@ var a = 4 + "7";
 4 * "7"; 
 
 //Aquí concatenamos para convertir la variable a string (coerción implícita)
-var a = 20;
+var a = 20; // 20 número
 var b = a + ""; 
 console.log(b); 
 
