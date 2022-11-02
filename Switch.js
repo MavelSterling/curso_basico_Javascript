@@ -65,6 +65,30 @@ semaforo("rojo") // ¡No puedes avanzar!
 semaforo("azul") // ¡No reconozco ese color! :/
 
 
+// Switch es una forma diferente de validar, está depende del caso que sea verdad. 
+
+var numero = 5; 
+var resultado; 
+
+/* Switch compara con un === por esa razón los elementos tiene que ser idénticos */ 
+
+switch (numero) {
+    case 1: 
+        resultado = "Sí es uno";
+        break;
+    case 10: 
+        resultado = "Sí es diez";
+        break;
+    case 100:
+        resultado = "Sí es cien";
+        break;
+    default:   
+        resultado = "No match, es" + " "+ numero; 
+}
+
+console.log(resultado); 
+
+
 //----------------------------------------------------------------
 // JUEGO PIEDRA, PAPEL o TIJERA
 
@@ -104,3 +128,22 @@ var resultado_juego = function( jugador, maquina){
     resultado_juego(tijera,piedra) // Perdiste :/
     resultado_juego(piedra,tijera) // Perdiste :/
     resultado_juego(papel,papel) // empate
+
+
+//------------------------------------------------
+export function solution(article) {
+    if (article == 'computadora') {
+      return 'Con mi computadora puedo programar usando JavaScript';
+    } else if (article == 'celular') {
+      return 'En mi celular puedo aprender usando la app de Platzi'
+    } else if (article == 'cable') {
+      return '¡Hay un cable en mi bota!'
+    } else  {
+      return 'Artículo no encontrado'
+    }
+    
+
+      solution('computadora')
+      solution('celular')
+      solution('cable')
+      solution('ornitorrinco')
