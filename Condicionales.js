@@ -109,31 +109,36 @@ console.log(resultado);
 //----------------------------------------------------------------
 // JUEGO PIEDRA, PAPEL o TIJERA
 
-var jugador = "papel"
-var computador = "piedra"
+var papel = "papel"
+var piedra = "piedra"
+var tijera = "tijera"
 
-if (jugador == "papel"  && computador == "piedra") 
+var resultado_juego = function( jugador, maquina){
+if (jugador == "papel"  && maquina == "piedra") 
 {
     console.log("¡Ganaste!");
 }
-else if (jugador == "tijeras"  && computador == "papel") 
+else if (jugador == "tijeras"  && maquina == "papel") 
 {
     console.log("¡Ganaste!");
 }
-else if (jugador == "Piedra"  && computador == "tijeras") 
+else if (jugador == "Piedra"  && maquina == "tijeras") 
 {
     console.log("¡Ganaste!");
 }
-else if (jugador == "Piedra"  && computador == "Piedra" ) 
+else if (jugador == "Piedra"  && maquina == "Piedra" ) 
 {
     console.log("empate");
-}else if (jugador == "tijeras"  && computador == "tijeras" ) 
+}else if (jugador == "tijeras"  && maquina == "tijeras" ) 
 {
     console.log("empate");
-}else if (jugador == "papel"  && computador == "papel" ) 
+}else if (jugador == "papel"  && maquina == "papel" ) 
 {
     console.log("empate");
 }
 else {
     console.log("Perdiste")
 }
+}
+
+resultado_juego(papel,piedra)
