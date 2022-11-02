@@ -202,3 +202,14 @@ a & b// AND  a & b
 a ^ b// XOR  a ^ b
 a | b// OR  a | b
 ~b// NOT  a | b```
+
+// En este desafío vas a recibir un parámetro secreto en la función solution. 
+// Debes retornar true si el número secreto es mayor a 5 y false si es menor o igual.
+
+export function solution(secreto) {
+    return 5 < secreto;
+  }
+
+solution(1)
+solution(5)
+solution(10)
