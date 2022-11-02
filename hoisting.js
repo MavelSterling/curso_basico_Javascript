@@ -62,6 +62,7 @@ var miNombre;
 
 hey();
 
+miNombre = 'Diego';
 //---------------------------------
 // Ejemplo
 
