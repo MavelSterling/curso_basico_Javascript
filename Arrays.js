@@ -108,7 +108,7 @@ console.log('-----------------------------------------------------')
 // El método indexOf muestra el índice del elemento especificado como argumento.
 
 var array = [1,2,3,4]
-var index = array.indexOf(2) // -> el indice el segundo elemento
+var index = array.indexOf(2) // -> el indice el segundo elemento 2
 
 console.log(index) // 1
 
