@@ -39,3 +39,8 @@ Boolean(function(){}); //Cualquier función es verdadera también
 Boolean([]) // true
 Boolean({}) // true
 
+// Para que podemos utilizar esto, para generar condiciones segun el valor que demos. 
+
+if(InputEvent.value) {
+    //...
+}
