@@ -1,0 +1,14 @@
+1. ¿Qué diferencia hay entre comparar con "'==" y "==="?
+R/ "==" compara valores. "===" compara valores y tipo de dato
+
+2. ¿Cuál es la naturaleza de los valores booleanos?
+R/ true y false.
+
+3. ¿En qué consiste la coerción explícita?
+R/ En obligar cambiar el tipo de una variable a otra.
+
+4. ¿Qué valor se asigna por defecto a las variables cuando caen en hoisting?
+R/ undefined
+
+5. En el scope local de una función puedo usar variables:
+R/ Variables del scope global y locales de esa función.
