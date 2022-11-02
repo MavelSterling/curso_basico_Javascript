@@ -120,4 +120,22 @@ console.log(index) // -1
 
 var posicion = frutas.indexOf("Platano"); // te dará la posición de ese item en el array
 console.log(frutas);
+console.log('-----------------------------------------------------')
+console.log('-----------------------------------------------------')
 
+// Quiz
+
+// se recibe un parámetro arraySecreto en la función solution. 
+// Debes retornar true si el primer elemento del arraySecreto es de tipo string y 
+// debes retornar false si es de cualquier otro tipo.
+
+export function solution(arraySecreto) {
+    if (typeof arraySecreto[0] === "string") {
+      return true;
+    } else {
+      return false;
+    }
+  
+  }
+solution(["Huevo", "Gallina", "Vaca"]) // true
+solution([1, "Gallina", "Vaca"]) // false
