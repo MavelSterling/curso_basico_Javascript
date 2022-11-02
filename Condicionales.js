@@ -116,29 +116,31 @@ var tijera = "tijera"
 var resultado_juego = function( jugador, maquina){
 if (jugador == "papel"  && maquina == "piedra") 
 {
-    console.log("¡Ganaste!");
+    console.log("¡Ganaste! :D");
 }
 else if (jugador == "tijeras"  && maquina == "papel") 
 {
-    console.log("¡Ganaste!");
+    console.log("¡Ganaste! :D");
 }
 else if (jugador == "Piedra"  && maquina == "tijeras") 
 {
-    console.log("¡Ganaste!");
+    console.log("¡Ganaste! :D");
 }
 else if (jugador == "Piedra"  && maquina == "Piedra" ) 
 {
-    console.log("empate");
+    console.log("empate :| ");
 }else if (jugador == "tijeras"  && maquina == "tijeras" ) 
 {
-    console.log("empate");
+    console.log("empate :| ");
 }else if (jugador == "papel"  && maquina == "papel" ) 
 {
     console.log("empate");
 }
 else {
-    console.log("Perdiste")
+    console.log("Perdiste :/")
 }
 }
 
-resultado_juego(papel,piedra)
+resultado_juego(papel,piedra) // ¡Ganaste! :D
+resultado_juego(tijera,piedra) // Perdiste :/
+resultado_juego(piedra,tijera) // Perdiste :/
