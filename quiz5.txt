@@ -1,0 +1,17 @@
+1. ¿Qué método debo utilizar para eliminar el último elemento de un array?
+R/ .pop()
+
+2. ¿Qué hace el método `some()`?
+R/ Retorna "true"o “false” si hay elementos en un array que cumplan con la condición indicada.
+
+3. ¿Qué hace el método `forEach()`?
+R/ Ejecuta la función indicada una vez por cada elemento del array.
+
+4. ¿Qué hace el método `find()`?
+R/ Retorna el primer elemento de un array que cumple con una condición definida en un nuevo array.
+
+5. ¿Qué hace el método `map()`?
+R/ Crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+
+6. ¿Qué hace el método `filter()`?
+R/ Crea un nuevo array con los elementos del array que se pasó como parámetro y que cumplan con la condición definida.
