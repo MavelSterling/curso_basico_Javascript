@@ -238,6 +238,8 @@ miAuto.annio
 miAuto.modelo 
 
 miAuto.detallesDelAuto(); 
+console.log("--------------------------------")
+console.log("--------------------------------")
 
 
 // Función constructora 
@@ -252,3 +254,54 @@ var newAuto = new auto("Tesla", "Model 3", 2020);
 
 console.log(newAuto.marca)
 console.log(newAuto.modelo)
+console.log("--------------------------------")
+console.log("--------------------------------")
+
+// Generar varios objetos a partir de una función constructora
+
+/* Para crear una función constructora, debemos definir los parámetros correspondientes, 
+que serán los atributos del objeto, que cambiarán con la nueva información mediante argumentos. 
+Estos argumentos deben hacer referencia a cada uno del nuevo objeto, 
+esto mediante el objeto contexto this.*/
+
+
+function Auto(brand, model, year){
+    this.marca = brand
+    this.modelo = model
+    this.año = year
+    this.detalle = function () {
+        console.log(`Auto ${this.modelo} del ${this.año}.`)
+    }
+}
+console.log("--------------------------------")
+console.log("--------------------------------")
+
+// Si ejecutamos la función Auto mostrará un error, 
+// necesitamos especificar que vamos a construir una instancia mediante la palabra reservada new.
+
+var miAuto = new Auto("Toyota", "Corolla", 2020)
+/* Auto {
+  marca: 'Toyota',
+  modelo: 'Corolla',
+  'año': 2020,
+  detalle: ƒ ()
+}*/
+
+// De esta manera, puedes crear varios objetos a partir de una función constructora 
+// que permita especificar atributos y métodos personalizados.
+
+// otroAuto generar una nueva instancia de Auto, se agregan las propiedades
+var otroAuto = new Auto("Tesla", "Model 3", 2021)
+console.log("Caracteristicas del auto 1:",otroAuto)
+console.log("--------------------------------")
+console.log("--------------------------------")
+
+var otroAuto2 = new Auto("Suzuki", "K-20", 2019)
+console.log("Caracteristicas del auto 2:",otroAuto2)
+console.log("--------------------------------")
+console.log("--------------------------------")
+
+var otroAuto3 = new Auto("Ferrari", "Model N", 2018)
+console.log("Caracteristicas del auto 3:",otroAuto3)
+console.log("--------------------------------")
+console.log("--------------------------------")
