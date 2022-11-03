@@ -385,3 +385,61 @@ for(var i = 0; marca.length > i && modelo.length > i && anio.length > i; i++){
     var nuevoAuto = new auto(marca[i], modelo[i], anio[i]);
     console.log(nuevoAuto)
 }
+
+//DESAFIO
+
+/* En este desafío vas a recibir un objeto car como parámetro de la función solution.
+
+Este objeto puede contener diferentes propiedades. 
+Debes asegurarte de que tenga la propiedad licensePlate (la placa del auto). 
+Si sí la tiene, devuelve el objeto original con la propiedad drivingLicense como true.
+ Si no la tiene, devuelve el objeto original con la propiedad drivingLicense como false.
+
+*/
+
+export function solution(car) {
+    if (car.licensePlate) {
+      car["drivingLicense"] = true;
+    } else {
+      car["drivingLicense"] = false;
+    }
+    return car;
+  }
+
+// Prueba 1
+solution({
+    color: 'red',
+    brand: 'Kia',
+  });
+  
+/* Prueba 1
+{
+  color: 'red',
+  brand: 'Kia',
+  drivingLicense: false,
+}*/
+
+  // Prueba 2
+  solution({
+    color: 'gray',
+    brand: 'Chevrolet',
+    licensePlate: 'AAA111',
+  });
+
+/* Prueba 2
+{
+  color: 'gray',
+  brand: 'Chevrolet',
+  licensePlate: 'AAA111',
+  drivingLicense: true,
+}*/
+
+  
+  // Prueba 3
+  solution({ licensePlate: 'RGB255'  });
+
+  /* Prueba 3
+{
+  licensePlate: 'RGB255',
+  drivingLicense: true,
+}*/
