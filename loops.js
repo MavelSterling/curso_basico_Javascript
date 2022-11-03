@@ -198,3 +198,28 @@ while (edad > 18 || edad <= 0){
 }
 
 console.log("Gracias por ingresar al programa")
+
+
+// DESAFIO:
+
+// En este desafío tu función solution recibirá 2 parámetros:
+
+// estudiantes: un array de strings con varios nombres de estudiantes.
+// deathCount: un número entero.
+// nuevo: un string con el nombre de un nuevo estudiante (que no aparecía antes en el array).
+
+export function solution(estudiantes, deathCount, nuevo) {
+    while (deathCount > 0) {
+      estudiantes.pop();
+      deathCount--;
+    }
+  
+    estudiantes.push(nuevo);
+    return estudiantes;
+  }
+
+solution(["Nico", "Zule"], 0, "Santi") //["Nico", "Zule", "Santi"] -> no desapareció ningún elemento, se agregó Santi al final
+solution(["Juan", "Juanita", "Daniela"], 1, "Julian") // ["Juan", "Juanita", "Julian"] -> desapareció 1 elemento (Daniela), se agregó Julian al final
+solution(["Nath", "Luisa", "Noru"], 2, "Cami") // ["Nath", "Cami"] -> desaparecieron 2 elmentos (Luisa y Noru), se agregó Cami al final
+
+
