@@ -164,3 +164,37 @@ for(let estudiante of estudiantes){
 console.log('-----------------------------------------------------')
 console.log('-----------------------------------------------------')
 
+// Ciclo while
+
+// Para el ciclo while no conocemos la cantidad de veces que la estructura repetirá una o varias instrucciones. 
+// Aunque también se puede acoplar para que realice un determinado número de repeticiones.
+
+// La estructura del ciclo while
+
+// while (condición) {
+    // Bloque de código
+    // Cambiar la condición para salir del bucle
+// }
+
+// EJEMPLO: Generación de números con el bucle while
+
+var numero = 1
+
+while ( numero <= 10 ){
+    console.log(numero)
+    numero++
+}
+console.log('-----------------------------------------------------')
+console.log('-----------------------------------------------------')
+
+
+// Mientras (while) la variable numero sea menor o igual que 10 (numero <= 10) ejecuta una o varias instrucciones (console.log); 
+// finalmente, aumenta la variable en uno (numero++) para que no exista un bucle infinito
+
+var edad = Number(prompt("Ingrese un valor: "))
+
+while (edad > 18 || edad <= 0){
+  edad = Number(prompt("Ingrese un valor correcto: "))
+}
+
+console.log("Gracias por ingresar al programa")
