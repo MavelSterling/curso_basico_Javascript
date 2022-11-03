@@ -47,6 +47,8 @@ var array = [1,2,3]
 array.push(4,5)
 console.log(array) // [ 1, 2, 3, 4, 5 ]
 
+var frutas = ["Manzana", "Plátano", "Cereza", "Fresas"];
+
 var masFrutas = frutas.push("Uvas"); // Esté metodo añadirá "Uvas" añ final del array
  console.log(frutas);
 
@@ -139,3 +141,107 @@ export function solution(arraySecreto) {
   }
 solution(["Huevo", "Gallina", "Vaca"]) // true
 solution([1, "Gallina", "Vaca"]) // false
+
+
+// Eliminando elementos de un Array
+
+// El método .push() nos permite agregar uno o más elementos al final de un array.
+
+// Array inicial
+let txtArray = ["Ana","Juan","Diego","Laura"]
+
+//Función
+
+function addCharacters(){
+  // Se agrega elementos
+  txtArray.push("Chris","María")
+  // Se revisa el array que ahora tiene los números agregados
+  console.log(txtArray)
+}
+
+addCharacters() 
+
+// array. .shift() eliminar el primer elemento de un array, es decir,
+// elimina el elemento que esté en el índice 0.
+
+// --- SHIFT ---
+
+//Creamos el array
+let array = [1,2,3,4,5]
+console.log(array)
+
+// Aplicamos .shift()
+let shiftArray = array.shift()
+
+//Revisamos. El output debe de ser [2,3,4,5]
+console.log(array)
+
+// --- POP ---
+
+//Creamos el array
+let array1 = [1,2,3,4,5]
+console.log(array1)
+
+// Aplicamos .shift()
+let shiftArray1 = array1.pop()
+
+//Revisamos. El output debe de ser [1,2,3,4]
+console.log(array1)
+
+// Playground: Arregla el Bug
+/*
+En este desafío debes ayudarnos a arreglar la función solution.
+
+Esta recibe un array cars y debería retornar 
+el array filtrado únicamente con los objetos que tengan 
+la propiedad licensePlate.
+
+Pero no está funcionando.
+
+La función solo devuelve un objeto con el primer elemento que 
+cumple los requisitos, no estamos recibiendo los demás elementos del array 
+que también deberían pasar el filtro.
+
+
+*/
+
+
+export function solution(cars) {
+  return cars.filter(function (car) {
+    if (car.licensePlate) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+}
+
+const cars = [
+  {
+    color: 'red',
+    brand: 'Kia',
+  },
+  {
+    color: 'gray',
+    brand: 'Chevrolet',
+    licensePlate: 'AAA111',
+  },
+  {
+    licensePlate: 'RGB255',
+  },
+];
+
+solution(cars);
+
+/* Retorna
+[
+  {
+    color: 'gray',
+    brand: 'Chevrolet',
+    licensePlate: 'AAA111',
+  },
+  {
+    licensePlate: 'RGB255',
+  },
+]
+*/
